@@ -1,0 +1,2 @@
+--after add and commit in local dictionary
+git push ["shorten url(ex: orgin)"] [branch name]
