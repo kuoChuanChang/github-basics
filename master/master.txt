@@ -5,4 +5,20 @@
 …or push an existing repository from the command line
 git remote add origin git@github.com:charliech17/github-basics.git (orgin: is shorten of your url. need to be consist)
 git branch -M main (option)
-git push -u origin main ("orgin" is the shorten of url. need to be consist. "main" is the brach name you want to create)
+git push (-u) origin main ("orgin" is the shorten of url. need to be consist. "main" is the brach name you want to create)
+
+---
+situation: remote branch has some changes.
+1. git fetch [shorten url]
+2. git branch -a (this will show up  remote branch)
+
+or use:
+1. git pull [shorten url (ex: orgin)] [branch you want to merge to]
+
+use "git checkout [remote branch name] " to go to detach head mode. Then:
+3. git checkout -b [new branch name] (to create new branch to your local files)
+
+---there is a better way to do this.
+***here
+1. git branch --track [new branch name(need to equal to remote branch)] [shorten url (ex: orgin)]/[remote branch name]
+2. git push
