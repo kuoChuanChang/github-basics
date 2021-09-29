@@ -1,2 +1,8 @@
 1. add repository in github(include settings)
 2. save the same name to github repostory in local dictionary. 
+
+----
+…or push an existing repository from the command line
+git remote add origin git@github.com:charliech17/github-basics.git (orgin: is shorten of your url. need to be consist)
+git branch -M main (option)
+git push -u origin main ("orgin" is the shorten of url. need to be consist. "main" is the brach name you want to create)
