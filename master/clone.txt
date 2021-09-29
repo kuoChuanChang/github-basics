@@ -1,0 +1,13 @@
+---clone
+git clone [url (in github -> repository -> code)]
+
+**use "git branch -vv" then you will see master is local tracking branch
+
+--situation: if you create new branch, for example: "feature-local" brach
+git push [shorten url] [local branch name]
+
+after push,"git branch -a" you will also see new remote branch
+
+**but feature-local branch isn't local tracking brach.So...
+1. switch to master branch, and delete former branch: "git switch master" , "git branch -D feature-local"
+2. create local tracking branch: "git branch --tracking [branch name (need to be the same as remote branch)] [shorten url]/[remote branch name]"

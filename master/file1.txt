@@ -1,9 +1,0 @@
----clone
-git clone [url (in github -> repository -> code)]
-
-**use "git branch -vv" then you will see master is local tracking branch
-
---situation: if you create new branch, for example: "feature-local" brach
-git push [shorten url] [local branch name]
-
-after push,"git branch -a" you will also see new remote branch
