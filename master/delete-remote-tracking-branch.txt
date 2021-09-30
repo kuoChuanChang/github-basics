@@ -1,0 +1,15 @@
+--- delete remote tracking branch
+git branch --delete --remote [shorten url(ex: origin)] /  [branch name]
+
+--- delete remote branch(also will delete the remote tracking branch)
+git push [shorten url] --delete [brach name]
+
+** you can check by "git ls-remote"
+
+--- undo commit and push to github (need to be very careful when cooperate with others)
+1. git reset --hard HEAD~1
+2. git commit -m "some text"
+3. git push [shorten url] [branch name] (here you will get rejected)
+4. git push --force [shorten url] [branch name]
+
+**need to be very careful when cooperate with others

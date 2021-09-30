@@ -1,1 +1,2 @@
+--- why "-u" ? because it will also create local tracking branch
 git push -u [shorten url] [branch name]
